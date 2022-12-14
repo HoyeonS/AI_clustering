@@ -14,7 +14,7 @@ def load_data(filepath):
             my_list.append(OrderedDict(line))
     return my_list
 
-def calc_feature(row):
+def calc_features(row):
 
     arr = np.array([np.int64(row.get('Attack')), np.int64(row.get('Sp. Atk')), np.int64(row.get('Speed')), np.int64(row.get('Defense')), np.int64(row.get('Sp. Def')), np.int64(row.get('HP'))])
     arr.shape = (6,)
